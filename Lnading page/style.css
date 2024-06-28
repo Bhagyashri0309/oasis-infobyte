@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+     width: 100%;
+     height: 100%;
+    
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-image: url('left.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+#lnavr i{
+    color: royalblue;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textcenter h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+#textcenter h2{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#textcenter p{
+    opacity: .6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(215, 109, 10);
+    color: white;
+    border-radius: 10px;
+    padding: 6px 8px 6px 8px;
+    font-weight: 600;
+    
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: whitesmoke;
+   
+}
+#textcenter button:hover{
+    background-color: rgb(65, 207, 226);
+    color: beige;
+    font-size: 10px;
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: royalblue;
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url('rbottom.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url('rtopleft2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url('rtopright.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* menu section */
+#menu{
+    padding: 25px 0 25px 0;
+    background-image: url('back3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: verdana;
+}
+#menu_row{
+    display: flex;
+    padding: 0 100px 0 100px;
+
+}
+#menu_col{
+    box-shadow: 2px 2px 2px #d68888;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    margin: 5px;
+    flex: 1;
+    padding: 10px;
+}
+#menu_col h2{
+    background-color: rgb(58, 64, 65);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+}
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+
+}
+
+
+
+
+
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+    #menu_row{
+        flex-wrap: wrap;
+        padding: 0 10px  0 10px;
+    }
+}
